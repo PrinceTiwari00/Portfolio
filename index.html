@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prince Tiwari — Web Developer &amp; IT Administration Professional</title>
+<meta name="description" content="Prince Tiwari is a web developer, IT administrator and management accountant based in Hetauda, Nepal. Building responsive websites and streamlining school operations with technology." />
+<meta name="author" content="Prince Tiwari" />
+<meta name="theme-color" content="#080b14" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Prince Tiwari — Web Developer &amp; IT Administration Professional" />
+<meta property="og:description" content="Web developer, IT administrator and management accountant based in Hetauda, Nepal." />
+<meta property="og:image" content="assets/profile.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='46' font-weight='700' fill='%23080b14' text-anchor='middle'%3EPT%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="progress-bar" aria-hidden="true"><span id="progress"></span></div>
+
+<!-- decorative background -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="brand" aria-label="Prince Tiwari — home">
+      <span class="brand__mark">PT</span>
+      <span class="brand__text">
+        <strong>Prince Tiwari</strong>
+        <small>Web &amp; IT Professional</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#education" class="nav__link">Education</a>
+      <a href="#contact" class="nav__link nav__link--cta">Let&rsquo;s talk</a>
+    </nav>
+
+    <div class="header__tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Available for freelance &amp; full-time roles
+        </p>
+
+        <h1 class="hero__title reveal">
+          Hi, I&rsquo;m <span class="grad-text">Prince</span><br />
+          I build websites &amp;<br />
+          keep school IT running.
+        </h1>
+
+        <p class="hero__lede reveal">
+          Web developer and IT administration professional from Hetauda, Nepal.
+          I design responsive, user-friendly websites and bring order to the
+          day-to-day operations behind them &mdash; from accounting workflows to
+          hardware troubleshooting.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--primary">
+            Hire me
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/></svg>
+          </a>
+          <a href="assets/Prince-Tiwari-CV.pdf" class="btn btn--ghost" download>
+            Download CV
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>
+          </a>
+        </div>
+
+        <dl class="hero__stats reveal">
+          <div class="stat">
+            <dt>Years in IT &amp; admin</dt>
+            <dd><span class="count" data-count="3">0</span><span class="stat__suffix">+</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Institutions supported</dt>
+            <dd><span class="count" data-count="2">0</span><span class="stat__suffix"></span></dd>
+          </div>
+          <div class="stat">
+            <dt>Degree in progress</dt>
+            <dd class="stat__text">BCA</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="portrait">
+          <div class="portrait__frame">
+            <img src="assets/profile.jpg" alt="Portrait of Prince Tiwari" width="600" height="600" />
+          </div>
+          <div class="portrait__ring" aria-hidden="true"></div>
+
+          <div class="chip chip--1">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M8.5 5.5 4 12l4.5 6.5M15.5 5.5 20 12l-4.5 6.5"/></svg>
+            Web Developer
+          </div>
+          <div class="chip chip--2">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 3.5 4.5 6.4v5.4c0 4.3 3.1 7.6 7.5 8.7 4.4-1.1 7.5-4.4 7.5-8.7V6.4L12 3.5Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>
+            IT Support
+          </div>
+          <div class="chip chip--3">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 19.5V10M10 19.5V5M16 19.5v-6.5M22 19.5H2.5"/></svg>
+            Accounting
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+      <span>Scroll</span>
+      <span class="scroll-hint__line" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Web Design</span><span>•</span><span>UI / UX</span><span>•</span><span>Microsoft Excel</span><span>•</span>
+      <span>IT Support</span><span>•</span><span>Data Entry</span><span>•</span><span>Accounting</span><span>•</span>
+      <span>Responsive Layouts</span><span>•</span><span>School Administration</span><span>•</span>
+      <span>Web Design</span><span>•</span><span>UI / UX</span><span>•</span><span>Microsoft Excel</span><span>•</span>
+      <span>IT Support</span><span>•</span><span>Data Entry</span><span>•</span><span>Accounting</span><span>•</span>
+      <span>Responsive Layouts</span><span>•</span><span>School Administration</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">01 — About</p>
+        <h2 class="section__title">A rare mix of<br /><span class="grad-text">code and ledgers.</span></h2>
+      </div>
+
+      <div class="about">
+        <div class="about__body reveal">
+          <p class="lead">
+            Most IT people avoid spreadsheets, and most accountants avoid servers.
+            I&rsquo;ve spent the last few years doing both &mdash; which means I can build
+            the website <em>and</em> keep the numbers, records and machines behind it
+            running on time.
+          </p>
+          <p>
+            By day I manage the internal accounts at <strong>Zenith Secondary School</strong>
+            in Hetauda &mdash; fee collection, payroll, high-volume data entry and reporting
+            in Excel. Alongside that I work remotely as a <strong>web designer &amp; developer</strong>,
+            building responsive sites, and previously served as an
+            <strong>IT Support Officer</strong> at Chandra Jyoti Awasiya School, where I
+            handled infrastructure, hardware and software problems as they came up.
+          </p>
+          <p>
+            I&rsquo;m currently studying for a <strong>Bachelor of Computer Applications (BCA)</strong>
+            and I like work where a tidy system, a clear spreadsheet and a fast page load
+            all matter equally.
+          </p>
+
+          <ul class="fact-list">
+            <li><span>Based in</span> Hetauda, Makwanpur, Nepal</li>
+            <li><span>Originally from</span> Gaur, Rautahat</li>
+            <li><span>Focus</span> Web development &amp; IT administration</li>
+            <li><span>Languages</span> Nepali (native), English (fluent)</li>
+          </ul>
+        </div>
+
+        <aside class="about__aside reveal">
+          <div class="card card--accent">
+            <h3>What I bring</h3>
+            <ul class="check-list">
+              <li>Responsive, mobile-first websites</li>
+              <li>Clean UI &amp; considered UX</li>
+              <li>Advanced Excel &amp; reporting</li>
+              <li>Fast, accurate data entry</li>
+              <li>Practical IT troubleshooting</li>
+              <li>Calm under deadline pressure</li>
+            </ul>
+          </div>
+
+          <div class="card quote-card">
+            <svg viewBox="0 0 24 24" class="quote-mark" aria-hidden="true"><path d="M9.5 6.5C6.9 7.6 5.5 9.7 5.5 12.7c0 2.4 1.3 4 3.3 4 1.7 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.7-2.6-2.7-.3 0-.6 0-.8.1.4-1.2 1.4-2.1 2.9-2.8l-1.7-2Zm8 0c-2.6 1.1-4 3.2-4 6.2 0 2.4 1.3 4 3.3 4 1.7 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.7-2.6-2.7-.3 0-.6 0-.8.1.4-1.2 1.4-2.1 2.9-2.8l-1.7-2Z"/></svg>
+            <p>Good systems are boring in the best way &mdash; nobody notices them because nothing breaks.</p>
+            <footer>— how I approach every project</footer>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section--tint" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">02 — Skills</p>
+        <h2 class="section__title">Tools I reach for<br /><span class="grad-text">every day.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5 4 12l4.5 6.5M15.5 5.5 20 12l-4.5 6.5"/></svg>
+          </div>
+          <h3>Web Design &amp; Development</h3>
+          <p>Responsive, accessible front-ends built to load fast and read well on any screen.</p>
+          <ul class="tag-list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive UI</li><li>UI / UX</li><li>Deployment</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 4.5 6.4v5.4c0 4.3 3.1 7.6 7.5 8.7 4.4-1.1 7.5-4.4 7.5-8.7V6.4L12 3.5Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>
+          </div>
+          <h3>IT Support &amp; Administration</h3>
+          <p>Keeping labs, offices and staff machines healthy &mdash; and staff confident with the software.</p>
+          <ul class="tag-list">
+            <li>Hardware repair</li><li>OS &amp; software setup</li><li>Networking basics</li><li>Training</li><li>Troubleshooting</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V10M10 19.5V5M16 19.5v-6.5M22 19.5H2.5"/></svg>
+          </div>
+          <h3>Accounting &amp; Data</h3>
+          <p>Fee collection, payroll and reporting handled with clean, auditable records.</p>
+          <ul class="tag-list">
+            <li>Advanced Excel</li><li>Payroll</li><li>Reconciliation</li><li>Data entry</li><li>Fast typing</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h10"/><circle cx="18.5" cy="17.5" r="2"/></svg>
+          </div>
+          <h3>Office &amp; Communication</h3>
+          <p>Documents, reports and correspondence delivered on time and to a professional standard.</p>
+          <ul class="tag-list">
+            <li>MS Office Suite</li><li>Word processing</li><li>English writing</li><li>Editing</li><li>Client comms</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="bars reveal">
+        <div class="bar">
+          <div class="bar__label"><span>Web Design &amp; Development</span><span>90%</span></div>
+          <div class="bar__track"><span data-fill="90"></span></div>
+        </div>
+        <div class="bar">
+          <div class="bar__label"><span>Microsoft Excel &amp; Data</span><span>92%</span></div>
+          <div class="bar__track"><span data-fill="92"></span></div>
+        </div>
+        <div class="bar">
+          <div class="bar__label"><span>IT Support &amp; Troubleshooting</span><span>88%</span></div>
+          <div class="bar__track"><span data-fill="88"></span></div>
+        </div>
+        <div class="bar">
+          <div class="bar__label"><span>Accounting &amp; Administration</span><span>85%</span></div>
+          <div class="bar__track"><span data-fill="85"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">03 — Experience</p>
+        <h2 class="section__title">Where I&rsquo;ve<br /><span class="grad-text">done the work.</span></h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__meta">
+            <span class="pill pill--live">Present</span>
+            <time>Dec 2023 — Now</time>
+          </div>
+          <div class="timeline__body">
+            <h3>Internal Management Accountant</h3>
+            <p class="timeline__org">Zenith Secondary School &middot; Hetauda-5, Piple, Makwanpur</p>
+            <ul class="bullet-list">
+              <li>Manage daily financial transactions, fee collections and payroll processing to keep reporting accurate.</li>
+              <li>Handle high-volume data entry and record maintenance using Microsoft Excel and dedicated tools.</li>
+              <li>Provide ongoing administrative and technical support to streamline school management operations.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__meta">
+            <span class="pill">Remote</span>
+            <time>Freelance</time>
+          </div>
+          <div class="timeline__body">
+            <h3>Web Designer &amp; Developer</h3>
+            <p class="timeline__org">Remote &middot; Client projects</p>
+            <ul class="bullet-list">
+              <li>Designed, developed and deployed responsive, user-friendly websites tailored to individual client needs.</li>
+              <li>Collaborated remotely to troubleshoot technical issues and deliver digital solutions on schedule.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__meta">
+            <span class="pill">3 years</span>
+            <time>Earlier</time>
+          </div>
+          <div class="timeline__body">
+            <h3>IT Support Officer</h3>
+            <p class="timeline__org">Chandra Jyoti Awasiya School &middot; Chandrapur-4, Rautahat</p>
+            <ul class="bullet-list">
+              <li>Acted as a core administration consultant, guiding staff on technical systems and software best practice.</li>
+              <li>Maintained IT infrastructure, resolved hardware and software issues, and used Microsoft Office for data management.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="section section--tint" id="work">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">04 — Selected Work</p>
+        <h2 class="section__title">Things I&rsquo;ve<br /><span class="grad-text">shipped.</span></h2>
+        <p class="section__sub">A snapshot of the project types I take on. Swap these cards for your live links and case studies.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card work-card--wide reveal">
+          <div class="work-card__art" aria-hidden="true">
+            <div class="mock mock--dash">
+              <div class="mock__bar"><i></i><i></i><i></i></div>
+              <div class="mock__row"><span></span><span></span><span></span></div>
+              <div class="mock__chart"><b style="--h:40%"></b><b style="--h:68%"></b><b style="--h:52%"></b><b style="--h:84%"></b><b style="--h:63%"></b><b style="--h:92%"></b></div>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <span class="pill">Web App &middot; School</span>
+            <h3>School Fee &amp; Records Dashboard</h3>
+            <p>An internal tool concept that turns messy fee registers and Excel sheets into one readable dashboard for collections, dues and monthly reporting.</p>
+            <ul class="tag-list"><li>HTML/CSS</li><li>JavaScript</li><li>Excel data</li><li>UI design</li></ul>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <div class="work-card__art" aria-hidden="true">
+            <div class="mock mock--site">
+              <div class="mock__nav"><i></i><i></i><i></i></div>
+              <div class="mock__hero"><span></span><span></span><span class="mock__btn"></span></div>
+              <div class="mock__cards"><b></b><b></b><b></b></div>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <span class="pill">Website</span>
+            <h3>Business &amp; School Websites</h3>
+            <p>Responsive marketing sites for local businesses and institutions &mdash; clear navigation, fast loading, easy for staff to update.</p>
+            <ul class="tag-list"><li>Responsive</li><li>SEO basics</li><li>Deployment</li></ul>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <div class="work-card__art" aria-hidden="true">
+            <div class="mock mock--support">
+              <div class="mock__terminal">
+                <span class="mock__line"><i>›</i> diagnose --hardware</span>
+                <span class="mock__line"><i>✓</i> lab-01 restored</span>
+                <span class="mock__line"><i>✓</i> staff trained</span>
+                <span class="mock__line mock__cursor"><i>›</i></span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <span class="pill">IT Support</span>
+            <h3>Campus IT Turnaround</h3>
+            <p>Set up, repaired and maintained the day-to-day IT infrastructure of a residential school, plus hands-on training for staff.</p>
+            <ul class="tag-list"><li>Hardware</li><li>Training</li><li>Maintenance</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <p class="work-note reveal">
+        Have a project in mind?
+        <a href="#contact">Tell me about it <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">05 — Education &amp; Certifications</p>
+        <h2 class="section__title">Always<br /><span class="grad-text">still learning.</span></h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <span class="edu-card__year">Present</span>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p class="edu-card__org">Undergraduate &middot; Currently running</p>
+          <p>Coursework spanning programming fundamentals, database systems, web technologies and software engineering.</p>
+        </article>
+
+        <article class="edu-card reveal">
+          <span class="edu-card__year">Oct 2020</span>
+          <h3>Diploma in Computer Training</h3>
+          <p class="edu-card__org">Unihub &middot; 6 months</p>
+          <p>Practical training in office applications, typing, computer fundamentals and everyday technical operations.</p>
+        </article>
+
+        <article class="edu-card reveal">
+          <span class="edu-card__year">Ongoing</span>
+          <h3>Self-directed learning</h3>
+          <p class="edu-card__org">Web development &amp; design</p>
+          <p>Continuous practice in front-end development, UI/UX principles and modern tooling through client work.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__wrap reveal">
+        <div class="contact__copy">
+          <p class="eyebrow">06 — Contact</p>
+          <h2 class="section__title">Let&rsquo;s build<br /><span class="grad-text">something good.</span></h2>
+          <p class="contact__lede">
+            I&rsquo;m open to freelance website work, IT support engagements and full-time
+            roles in web development or IT administration. Drop a message and I&rsquo;ll
+            get back to you.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6.5h16v11H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+              </span>
+              <span>
+                <small>Email</small>
+                <a href="mailto:princet6ye@gmail.com">princet6ye@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 3.5h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 5.7 2 2 0 0 1 7 3.5Z"/></svg>
+              </span>
+              <span>
+                <small>Phone / WhatsApp</small>
+                <a href="tel:+9779746660285">+977 974 666 0285</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              </span>
+              <span>
+                <small>Location</small>
+                <span>Hetauda, Makwanpur, Nepal</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contact-form" action="mailto:princet6ye@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Ramesh Shrestha" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Website project, IT support, job role…" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you need…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            Send message
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M4 12 20 4l-6 16-3.2-6.8L4 12Z"/></svg>
+          </button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark">PT</span>
+      <div>
+        <strong>Prince Tiwari</strong>
+        <p>Web developer, IT support &amp; management accountant — Hetauda, Nepal.</p>
+      </div>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="footer__copy">&copy; <span id="year">2026</span> Prince Tiwari. Built with care in Nepal.</p>
+  </div>
+</footer>
+
+<a href="#hero" class="to-top" id="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
